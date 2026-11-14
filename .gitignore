@@ -1,0 +1,10 @@
+# Seen-set state — must NEVER be committed (it is the replay protection) and
+# must survive deploys/restarts on the server (persistent disk/volume).
+seen-proofs.json
+seen-proofs.json.tmp
+
+# HMAC secret and other local environment — never commit.
+.env
+
+node_modules/
+*.log
